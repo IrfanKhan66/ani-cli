@@ -1,6 +1,6 @@
 # AniCLI
 
-aniCLI is a command-line tool for searching and watching anime episodes. It allows you to search for anime, select episodes, choose between subbed or dubbed versions, and watch them in your browser.
+Anicli is a command-line tool for searching and watching anime episodes. It allows you to search for anime, select episodes, choose between subbed or dubbed versions, and watch them in your browser.
 
 - ## Description
 
@@ -8,12 +8,12 @@ Anicli is a simple CLI tool built with Node.js that enables anime enthusiasts to
 
 - ## Getting Started
 
-To use aniCLI, follow these steps:
+To use Anicli, follow these steps:
 
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/IrfanKhan66/anicli.git
+git clone https://github.com/IrfanKhan66/ani-cli.git
 ```
 
 2. Install the required dependencies:
