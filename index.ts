@@ -13,6 +13,7 @@ import http from "http";
 import path from "path";
 import ejs from "ejs";
 import chalk from "chalk";
+import cProcess from "child_process";
 
 if (process.argv.length <= 2) {
   console.log(figlet.textSync("aniCLI", "Alligator"));
@@ -33,11 +34,12 @@ const startServer = async (port: number, src: string) => {
     }
   });
 
-  server.listen(port, () =>
+  server.listen(port, () => {
     console.log(
       chalk.greenBright(`Playback started on http://localhost:${port}/`)
-    )
-  );
+    );
+    return cProcess.exec(`start http://localhost:${port}`);
+  });
 };
 
 // Your CLI logic goes here...
